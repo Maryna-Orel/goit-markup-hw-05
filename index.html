@@ -13,6 +13,7 @@
 </head>
 <!--Шапка-->
 <body>
+            
 <header class="header">
    <div class="container head-nav">
    <nav class="header-conteiner">
@@ -43,8 +44,16 @@
    <section class="hover-section section" >
        <div class="container">
 <h1 class="hover">Эффективные решения <br />для Вашего бизнеса</h1>
-<button class="hover-btn" type="button">Заказать услугу</button>
+<button data-modal-open class="hover-btn" type="button">Заказать услугу</button>
+<div class="backdrop is-hidden"data-modal>
+   <div class="modal">
+      <button data-modal-close><svg class="button-icon" width="30" height="30">
+<use href="./image/sprite.svg#icon-close-black-18dp-2-1"></use>
+      </svg>
+     </button>
        </div>
+   </div>
+</div>
 </section>
 
 
@@ -318,6 +327,7 @@
 </div>
 </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 
 
